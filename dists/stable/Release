@@ -1,0 +1,25 @@
+Date: Mon, 04 May 2026 03:28:17 +0000
+MD5Sum:
+ db6e9d8c1c7347f114189d4736f2789e               38 Release
+ 6dcef2f9ad1c4b9622fa0c47917bd495              800 main/binary-all/Packages
+ e594ad28451a46fd123c355f91c97d62              550 main/binary-all/Packages.gz
+ 6dcef2f9ad1c4b9622fa0c47917bd495              800 main/binary-amd64/Packages
+ e594ad28451a46fd123c355f91c97d62              550 main/binary-amd64/Packages.gz
+SHA1:
+ 45385fa2f04222bf70d25a57967cf706be71026a               38 Release
+ 393507e43f23ea4c227d7c26846dcb63209b864c              800 main/binary-all/Packages
+ 7ef2bd476d91f415731ba19f936287b2fd2485ed              550 main/binary-all/Packages.gz
+ 393507e43f23ea4c227d7c26846dcb63209b864c              800 main/binary-amd64/Packages
+ 7ef2bd476d91f415731ba19f936287b2fd2485ed              550 main/binary-amd64/Packages.gz
+SHA256:
+ 5e83f2c9f9b05d0b1f1a1e607d1b4fe0ba41ff90f3e3a5bf820333688116352c               38 Release
+ 4eaa01346310b928552a2ff32c7e79c2b89bd36119b3acf228716fa071628292              800 main/binary-all/Packages
+ 01e8f461a7cc34ec61156802805f9f8b220321d2b57110ef0fc02329827e665a              550 main/binary-all/Packages.gz
+ 4eaa01346310b928552a2ff32c7e79c2b89bd36119b3acf228716fa071628292              800 main/binary-amd64/Packages
+ 01e8f461a7cc34ec61156802805f9f8b220321d2b57110ef0fc02329827e665a              550 main/binary-amd64/Packages.gz
+SHA512:
+ 4628613ec2ab322837ff4b65c4d7e62e93ec845b95ed146fa715c1bbcaba59c73d03d3ddaf748157be730f27343056a3794d0818f597e6f71c584d90bf1f6971               38 Release
+ e7438427d5adcf9bc6feebeba30f9e29763931967899d27d14662ed0f06c5b39d678787597547c73c3dbb76ac50f36d83fda89d863fe20d098b8f0b2859105e0              800 main/binary-all/Packages
+ 478eb36710b161f44bdebc06e67fbbd4282a3afdaf387c2a7d580ad79c3dc93a89c148046a91e90c322c325c58bd504fdc496ca7c8e96ab193c21d9fc8f2c102              550 main/binary-all/Packages.gz
+ e7438427d5adcf9bc6feebeba30f9e29763931967899d27d14662ed0f06c5b39d678787597547c73c3dbb76ac50f36d83fda89d863fe20d098b8f0b2859105e0              800 main/binary-amd64/Packages
+ 478eb36710b161f44bdebc06e67fbbd4282a3afdaf387c2a7d580ad79c3dc93a89c148046a91e90c322c325c58bd504fdc496ca7c8e96ab193c21d9fc8f2c102              550 main/binary-amd64/Packages.gz
