@@ -1,14 +1,14 @@
 Package: tclippy
-Version: 1.0.2
+Version: 1.0.3
 Architecture: all
 Maintainer: Tanmay Malik <tanmaymalik1908@gmail.com>
-Installed-Size: 50
+Installed-Size: 83
 Depends: python3 (>= 3.10), python3-pyqt5, python3-pynput, python3-pyperclip
-Filename: pool/main/tclippy_1.0.2_all.deb
-Size: 8484
-MD5sum: 2f02cc43ee06a57a360bc7f9e8939025
-SHA1: 72e624f5c54e4a29da02d33c0b413ea05e31a2ba
-SHA256: 7e2dc503696a76446aa139b55a478d4ad39a2ecf0916686e9befaa78e030c310
+Filename: pool/main/tclippy_1.0.3_all.deb
+Size: 13804
+MD5sum: 07f43984f4cfed0910d17335396ec497
+SHA1: eae0096e1545d601c69855d96d699dc9881e5908
+SHA256: 9dfb75f1e067a60bf89f659c5322fec04c912edf0e7e6de5c98d05c15f74119a
 Section: utils
 Priority: optional
 Homepage: https://github.com/FortB164/Tclippy
