@@ -4,10 +4,13 @@ Tclippy is a lightweight clipboard history manager for Linux. It runs silently i
 
 ## Features
 
-- Stores up to 100 clipboard entries (configurable)
+- Stores up to 100 clipboard entries per clipboard (configurable)
+- Supports text, images, files, and links
 - Global hotkey popup selector (`Ctrl + Super + V` by default)
 - Starts automatically on login via XDG autostart
 - Zero-dependency install through a standard apt repository
+- Multiple named clipboards with optional boot persistence
+- Favourite any entry to make it persist across reboots
 
 ## Requirements
 
@@ -36,7 +39,43 @@ tclippy &
 
 ## Usage
 
-Press **Ctrl + Super + V** (Super is the Windows/Command key) to open the clipboard history selector. Click or keyboard-navigate to any entry to copy it back to your clipboard. Press **Backspace** to close the selector without selecting anything.
+### Opening and closing
+
+Press **Ctrl + Super + V** (Super is the Windows/Command key) to open the clipboard history selector. Press **Backspace** to close it without selecting anything.
+
+### Navigating and selecting
+
+| Key | Action |
+|-----|--------|
+| **↑ / ↓** | Move between entries |
+| **Enter** | Select the highlighted entry and close the GUI |
+| **Backspace** | Close without selecting |
+
+### Deleting entries
+
+- Navigate to an entry and press **Delete** to remove it.
+- Press **Ctrl + A** to select all entries, then **Delete** to clear the entire history.
+
+### Supported content types
+
+Tclippy tracks text, images, files, and links:
+
+- **Images** — displayed inline in the history list.
+- **Files** — shown with their file path.
+- **Links** — shown with a browser icon on the left; click it to open the link in your default browser.
+- **Text / other** — shown as plain text.
+
+### Editing entries
+
+Non-image entries have an **Edit** button. Click it to modify the stored text directly in the GUI.
+
+### Favouriting entries
+
+Click the **★ star** icon beside any entry to favourite it. Favourited entries are boot-persistent — they survive reboots and are never automatically evicted from history.
+
+### Multiple clipboards
+
+You can create and switch between several named clipboards to keep different sets of content separate. Each clipboard can have persistence toggled on or off independently. Moving items between clipboards is not currently supported.
 
 ---
 
