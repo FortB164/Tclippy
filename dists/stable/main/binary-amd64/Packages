@@ -4,7 +4,7 @@ Architecture: all
 Maintainer: Tanmay Malik <tanmaymalik1908@gmail.com>
 Installed-Size: 50
 Depends: python3 (>= 3.10), python3-pyqt5, python3-pynput, python3-pyperclip
-Filename: pool/main/t/tclippy/tclippy_1.0.2_all.deb
+Filename: pool/main/tclippy_1.0.2_all.deb
 Size: 8484
 MD5sum: 2f02cc43ee06a57a360bc7f9e8939025
 SHA1: 72e624f5c54e4a29da02d33c0b413ea05e31a2ba
