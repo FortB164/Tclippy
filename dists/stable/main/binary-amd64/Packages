@@ -5,10 +5,10 @@ Maintainer: Tanmay Malik <tanmaymalik1908@gmail.com>
 Installed-Size: 83
 Depends: python3 (>= 3.10), python3-pyqt5, python3-pynput, python3-pyperclip
 Filename: pool/main/tclippy_1.0.3_all.deb
-Size: 13804
-MD5sum: 07f43984f4cfed0910d17335396ec497
-SHA1: eae0096e1545d601c69855d96d699dc9881e5908
-SHA256: 9dfb75f1e067a60bf89f659c5322fec04c912edf0e7e6de5c98d05c15f74119a
+Size: 13976
+MD5sum: e137e2348b5e3da735da5563f1935aa2
+SHA1: b87e56bfc4d9d18f590b8f59d90ac80e7575fb65
+SHA256: bee124785f280809a8818859b1983d5daccd714740fb732cff1879fb9739a593
 Section: utils
 Priority: optional
 Homepage: https://github.com/FortB164/Tclippy
