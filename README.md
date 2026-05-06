@@ -16,7 +16,7 @@ Unlike traditional clipboard managers, Tclippy is designed around speed, persist
 
 # What's New in v1.0.4
 
-`build.deb_v1.0.4` is the first official Debian-packaged release of Tclippy.
+`build.deb_v1.0.4` is the fourth official Debian-packaged release of Tclippy.
 
 This release builds on the earlier `build.deb_v1.0.1`, `v1.0.2`, and `v1.0.3` branches and introduces a major UI and configuration overhaul.
 
@@ -33,7 +33,6 @@ tclippy_1.0.4_all.deb
 The selector popup has been rebuilt from the ground up with:
 
 * A modern dark navy/deep-blue theme
-* Frameless always-on-top window styling
 * Live-updating history list with no flicker
 * Rich clipboard item rendering
 * Draggable popup positioning
