@@ -1,11 +1,11 @@
 # Tclippy
 
-Tclippy is a lightweight clipboard history manager for Linux that stays out of your way until you need it. It runs silently in the background, remembers everything you copy, and gives you instant access to your clipboard history with a single global hotkey.
+Tclippy is a lightweight clipboard history manager for Linux that stays out of your way until you need it. 
 
 Unlike traditional clipboard managers, Tclippy is designed around speed, persistence, and minimal friction:
 
 * Instant popup selector with zero visible startup lag
-* Multiple named clipboard boards
+* Multiple named clipboards
 * Persistent starred items that survive reboots and clears
 * Support for text, images, files, folders, and links
 * Fully configurable shortcuts directly inside the app
@@ -19,12 +19,6 @@ Unlike traditional clipboard managers, Tclippy is designed around speed, persist
 `build.deb_v1.0.4` is the fourth official Debian-packaged release of Tclippy.
 
 This release builds on the earlier `build.deb_v1.0.1`, `v1.0.2`, and `v1.0.3` branches and introduces a major UI and configuration overhaul.
-
-The branch produces a fully installable Debian package:
-
-```text
-tclippy_1.0.4_all.deb
-```
 
 ## Major additions in v1.0.4
 
@@ -73,17 +67,6 @@ Each board has:
 * Optional full-board persistence
 * Independent saved state
 
-### Persistent starred entries
-
-Any clipboard entry can be starred/pinned.
-
-Starred entries:
-
-* Survive application restarts
-* Survive system reboots
-* Survive history clears
-* Are never automatically evicted
-
 ### Better clipboard type support
 
 Tclippy now stores and restores:
@@ -125,7 +108,7 @@ Press:
 Ctrl + Super + V
 ```
 
-and your entire clipboard history appears instantly.
+and your entire clipboard appears instantly.
 
 The selector widget is preloaded during startup, so the popup is already built before you press the hotkey. This eliminates the visible lag common in many clipboard managers.
 
@@ -142,7 +125,7 @@ Everything can be controlled from the keyboard:
 | Key       | Action                     |
 | --------- | -------------------------- |
 | ↑ / ↓     | Navigate entries           |
-| Enter     | Paste selected entry       |
+| Enter     | Select entry               |
 | Backspace | Close selector             |
 | Delete    | Delete selected entry      |
 | Ctrl + A  | Select all entries         |
