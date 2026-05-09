@@ -1,17 +1,17 @@
 Package: tclippy
-Version: 1.0.5
+Version: 1.0.6
 Architecture: all
 Maintainer: Tanmay Malik <tanmaymalik1908@gmail.com>
-Installed-Size: 153
+Installed-Size: 146
 Depends: python3 (>= 3.10), python3-pyqt5, python3-pynput, python3-pyperclip
-Filename: pool/main/tclippy_1.0.5_all.deb
-Size: 22788
-MD5sum: 25c563df09d4a8f9e19784e67dd0ba45
-SHA1: b11f3496bc3e0e20fd18c05d6c3734c9e9dae6b4
-SHA256: 98bb2eaa1091257c5c7d46f3d5dbf70aeba80aab491c7d9de3d10292a0f61300
+Filename: pool/main/tclippy_1.0.6_all.deb
+Size: 23186
+MD5sum: 8efe1574fb80ac71ba1c0b2a65383978
+SHA1: 2d96a1062028041de36b91398d17b671a2f0c0da
+SHA256: a783e30295869daf6ce55199ee5d2d3bf14ed70812664b65ac9b528c84443ee2
 Section: utils
 Priority: optional
-Homepage: https://github.com/FortB164/Tclippy
+Homepage: https://github.com/FortB164/Tclip<!--->py
 Description: Lightweight clipboard history daemon for Linux
  Tclippy is a background clipboard manager that tracks clipboard
  history and provides a global hotkey-based selector UI.
