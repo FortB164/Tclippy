@@ -98,6 +98,53 @@ If a second instance is launched accidentally, it exits safely with a clear mess
 
 ---
 
+# What's New in v1.0.6
+
+This release focuses on **code quality, test coverage, and memory optimization** to ensure Tclippy remains snappy and reliable even with large clipboard histories.
+
+## Bug fixes
+
+* **Fixed reappearing deleted entries**: Deleted clipboard entries no longer reappear after a new copy operation (root cause: selector's internal cache wasn't synced on delete)
+
+## Code quality & refactoring
+
+* **Modular UI architecture**: Split the monolithic `selector.py` (2203 → 1541 lines) into focused modules:
+  - `dialogs.py` — Reusable dialog helpers (`TextEditDialog`, `prompt_text`, themed confirmation/message dialogs)
+  - `list_item.py` — Clipboard list item widget with cached star icons and unified button styling
+  - `selector.py` — Focused selector controller logic
+
+* **Centralized dialog styling**: All dark-themed dialogs now inherit consistent styling from `dialogs.py`, reducing duplication
+
+* **Data-driven keybind configuration**: Keybind input rows are now constructed from a simple list instead of verbose repeated code
+
+* **Dataclass memory optimization**: Added `__slots__` to `ClipboardEntry` to reduce per-instance memory overhead
+
+## Performance improvements
+
+* **Incremental list updates**: New `prependHistoryItem()` and `removeHistoryItem()` paths bypass full list rebuild during live history updates, reducing memory allocation churn
+* **Widget reuse during search**: Search filter now rescues and reuses existing `ClipboardListItem` widgets instead of allocating new ones every keystroke
+* **Render-state short-circuit**: Skips redundant list rebuilds when search results haven't changed
+* **Result**: ~73% memory reduction during add/remove churn on large histories (191 MiB vs 706 MiB in local benchmarks)
+
+## Testing & benchmarking
+
+* **Comprehensive test coverage**: 131 passing tests covering all modules with batch-level reporting (pass/fail per test class)
+* **New test files**:
+  - `test_dialogs.py` — Dialog helpers and themeing
+  - `test_list_item.py` — List item widget and icon caching
+  - Added `__slots__` coverage in `test_models.py`
+
+* **Configurable memory benchmark**: `Test/benchmark_selector_memory.py` now accepts preset modes (`--mode quick|full|stress`) and configurable operation counts for repeatable regression gating:
+  - Quick mode: 200 seed entries, 50 search iterations, 50 add/remove iterations
+  - Full mode (default): 1000 seed entries, 300 search iterations, 200 add/remove iterations
+  - Stress mode: 5000 seed entries, 1000 search iterations, 500 add/remove iterations
+
+## UI refinements
+
+* **Version number in settings**: Tiny version indicator in the settings menu (for internal reference)
+
+---
+
 # Features
 
 ## Instant global popup
